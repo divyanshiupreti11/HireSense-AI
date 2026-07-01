@@ -1,0 +1,114 @@
+@use "./style/button.scss";
+
+:root {
+
+    --bg: #0B1020;
+    --surface: #161D2E;
+    --card: #1D2436;
+
+    --primary: #8B5CF6;
+    --secondary: #EC4899;
+    --blue: #4F8CFF;
+
+    --text: #F8FAFC;
+    --text-light: #A6B0CF;
+
+    --border: rgba(139,92,246,.18);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body,
+#root{
+
+    width:100%;
+    min-height:100vh;
+    height:auto;
+
+    font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+    color:var(--text);
+
+    background:
+    radial-gradient(circle at top left,#231942 0%,transparent 35%),
+    radial-gradient(circle at top right,#3B0A45 0%,transparent 30%),
+    linear-gradient(180deg,#080B18,#0D1224);
+
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+    radial-gradient(circle,#ffffff08 1px,transparent 1px);
+
+    background-size:32px 32px;
+
+    opacity:.25;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+img{
+    max-width:100%;
+}
+
+.highlight{
+
+    background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary)
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+html{
+    overflow-y:auto !important;
+}
+
+body{
+    overflow-y:auto !important;
+}
+
+#root{
+    overflow:visible !important;
+}
