@@ -1,7 +1,8 @@
 const { GoogleGenAI } = require("@google/genai")
 const { z } = require("zod")
 const { zodToJsonSchema } = require("zod-to-json-schema")
-const puppeteer = require("puppeteer")
+const chromium = require("@sparticuz/chromium");
+const puppeteer = require("puppeteer-core");
 
 const ai = new GoogleGenAI({
     apiKey: process.env.GOOGLE_GENAI_API_KEY
@@ -58,56 +59,58 @@ async function generateInterviewReport({ resume, selfDescription, jobDescription
 
 
 async function generatePdfFromHtml(htmlContent) {
-    const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    executablePath: await chromium.executablePath(),
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    headless: true,
+  });
+
+  try {
     const page = await browser.newPage();
-    await page.setContent(htmlContent, { waitUntil: "networkidle0" })
+
+    await page.setContent(htmlContent, {
+      waitUntil: "networkidle0",
+    });
+
     await page.addStyleTag({
-    content: `
-        @page{
-            size:A4;
-            margin:8mm;
+      content: `
+        @page {
+          size: A4;
+          margin: 8mm;
         }
 
-        body{
-    font-size: 12.5px;
-    line-height: 1.45;
-}
-
-        h1{
-            margin:0;
+        body {
+          font-size: 12.5px;
+          line-height: 1.45;
         }
 
-        h2{
-            margin-top:8px;
-            margin-bottom:4px;
-        }
+        h1 { margin: 0; }
+        h2 { margin-top: 8px; margin-bottom: 4px; }
 
-        p,li{
-            margin:2px 0;
-        }
+        p, li { margin: 2px 0; }
 
-        ul{
-            padding-left:18px;
-        }
-    `
-});
+        ul { padding-left: 18px; }
+      `,
+    });
 
-   const pdfBuffer = await page.pdf({
-    format: "A4",
-    printBackground: true,
-    preferCSSPageSize: true,
-    scale: 1,
-    margin: {
+    const pdfBuffer = await page.pdf({
+      format: "A4",
+      printBackground: true,
+      preferCSSPageSize: true,
+      scale: 1,
+      margin: {
         top: "8mm",
         bottom: "8mm",
         left: "10mm",
-        right: "10mm"
-    }
-});
+        right: "10mm",
+      },
+    });
 
-    await browser.close()
-
-    return pdfBuffer
+    return pdfBuffer;
+  } finally {
+    await browser.close();
+  }
 }
 
 async function generateResumePdf({ resume, selfDescription, jobDescription }) {
