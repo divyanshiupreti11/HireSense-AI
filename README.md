@@ -230,17 +230,7 @@ Puppeteer
 PDF Download
 ```
 
----
 
-# 🌟 Future Improvements
-
-- Voice Mock Interviews
-- AI Speech Evaluation
-- Coding Assessment
-- Company-wise Interview Questions
-- Cover Letter Generator
-- Resume Version History
-- Multi-language Support
 
 ---
 
