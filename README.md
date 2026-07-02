@@ -9,7 +9,8 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
-
+![Home Page](home.png)
+---
 # ✨ Features
 
 ## 📄 Resume Upload
@@ -97,7 +98,8 @@ Features:
 
 ## Resume Generator
 
-(Add Screenshot Here)
+![Resume Page](resume.png)
+
 
 ---
 
