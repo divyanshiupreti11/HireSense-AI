@@ -85,7 +85,7 @@ Features:
 ![Register Page](login.png)
 ## Home Page
 
-(Add Screenshot Here)
+![Home Page](home.png)
 
 ---
 
