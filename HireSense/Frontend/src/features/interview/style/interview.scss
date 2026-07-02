@@ -1520,3 +1520,196 @@ overflow: hidden;
         transform:translateY(0);
     }
 }
+
+
+
+@media (max-width:1024px){
+
+    .interview-layout{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+    .interview-nav{
+
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .interview-sidebar{
+
+        width:100%;
+        border-top:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .interview-divider{
+
+        display:none;
+
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    .interview-page{
+
+        padding:12px;
+
+    }
+
+    .content-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+
+    }
+
+    .content-header h2{
+
+        font-size:28px;
+
+    }
+
+    .interview-content{
+
+        padding:20px 16px;
+
+    }
+
+    .q-card__question{
+
+        font-size:15px;
+
+    }
+
+    .match-score{
+
+        align-items:center;
+
+    }
+    .interview-nav{
+
+    padding:16px;
+
+}
+
+.nav-content{
+
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+
+}
+
+.interview-nav__label{
+
+    display:none;
+
+}
+
+.interview-nav__item{
+
+    min-width:max-content;
+    flex-shrink:0;
+
+}
+.primary-button{
+     height:44px;
+    width:100%;
+    margin-top:14px;
+
+}
+.content-header h2{
+
+  font-size:22px;
+
+}
+
+.q-card__header{
+
+     padding:14px 16px;
+
+    gap:10px;
+
+}
+
+.q-card__question{
+  font-size:14px;
+    line-height:1.45;
+
+}
+
+.q-card__body{
+
+    padding:16px;
+
+}
+.q-card__index{
+
+    width:30px;
+    height:22px;
+
+    font-size:11px;
+
+}
+.q-card__chevron{
+
+margin-top:6px;
+
+}
+.content-header__count{
+
+     padding:5px 10px;
+
+    font-size:12px;
+
+}
+.interview-sidebar{
+
+  padding:20px 16px 28px;
+
+}
+.skill-tag{
+
+font-size:12px;
+
+padding:7px 10px;
+
+}
+.q-list{
+
+gap:14px;
+
+}
+.interview-page{
+
+padding:8px;
+
+}
+.match-score__ring{
+    width:90px;
+    height:90px;
+}
+
+.match-score__value{
+    font-size:34px;
+}
+
+.match-score__status{
+    font-size:18px;
+}
+
+.match-score__sub{
+    font-size:13px;
+}
+
+}

@@ -215,15 +215,21 @@ useEffect(() => {
                             <h2>Target Job Description</h2>
                             <span className='badge badge--required'>Required</span>
                         </div>
-                        <textarea
-                            onChange={(e) => { setJobDescription(e.target.value) }}
-                            className='panel__textarea'
-                            placeholder={`Paste the full job description here...\ne.g. 'Senior Frontend Engineer at Google requires proficiency in React, TypeScript, and large-scale system design...'`}
-                            maxLength={5000}
-                        />
-                              <div className='char-counter'>
-                              {jobDescription.length} / 5000 chars
-                                  </div> 
+                        <div className="textarea-wrapper">
+
+    <textarea
+        onChange={(e) => setJobDescription(e.target.value)}
+        className="panel__textarea"
+        placeholder={`Paste the full job description here...
+e.g. 'Senior Frontend Engineer at Google requires proficiency in React, TypeScript, and large-scale system design...'`}
+        maxLength={5000}
+    />
+
+    <div className="char-counter">
+        {jobDescription.length} / 5000 chars
+    </div>
+
+</div>
                     </div>
 
                     {/* Vertical Divider */}
