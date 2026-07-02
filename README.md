@@ -81,7 +81,8 @@ Features:
 ---
 
 # 🖼️ Screenshots
-
+## Register Page
+![Login Page](login.png)
 ## Home Page
 
 (Add Screenshot Here)
