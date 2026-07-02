@@ -82,7 +82,7 @@ Features:
 
 # 🖼️ Screenshots
 ## Register Page
-![Login Page](login.png)
+![Register Page](login.png)
 ## Home Page
 
 (Add Screenshot Here)
