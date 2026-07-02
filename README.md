@@ -91,7 +91,7 @@ Features:
 
 ## Interview Report
 
-(Add Screenshot Here)
+![Interview Page](interview.png)
 
 ---
 
