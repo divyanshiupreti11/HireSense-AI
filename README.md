@@ -82,21 +82,22 @@ Features:
 ---
 
 # 🖼️ Screenshots
-## Register Page
+##  📝 Register Page
 ![Register Page](login.png)
-## Home Page
+---
+## 🏠 Home Page
 
 ![Home Page](home.png)
 
 ---
 
-## Interview Report
+## 📊 Interview Report
 
 ![Interview Page](interview.png)
 
 ---
-
-## Resume Generator
+ 
+## 🤖  Resume Generator
 
 ![Resume Page](resume.png)
 
@@ -252,21 +253,18 @@ Through this project I learned:
 - AI Response Structuring
 
 ---
-
-
-# 👨‍💻 Author
+# 👩‍💻 Author
 
 **Divyanshi Upreti**
 
-B.Tech Computer Science Engineering
+Computer Science Engineering Student
 
-Graphic Era Hill University, Bhimtal
 
 GitHub:
 https://github.com/divyanshiupreti11
 
 LinkedIn:
-(Add LinkedIn)
+https://www.linkedin.com/in/divyanshi-upreti-4a757b322/
 
 ---
 
