@@ -81,7 +81,7 @@ Features:
 
 ---
 
-# 🖼️ Screenshots
+# 📸 Screenshots
 ##  📝 Register Page
 ![Register Page](login.png)
 ---
@@ -268,10 +268,4 @@ https://www.linkedin.com/in/divyanshi-upreti-4a757b322/
 
 ---
 
-# ⭐ Show your support
 
-If you like this project,
-
-⭐ Star this repository.
-
-It motivates me to build more awesome AI-powered projects ❤️
